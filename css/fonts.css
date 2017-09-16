@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HelveticaNeueRoman";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/HelveticaNeue/helveticaneuecyr-roman-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue/helveticaneuecyr-roman-webfont.woff") format("woff"), url("../fonts/HelveticaNeue/helveticaneuecyr-roman-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HelveticaNeueRoman";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/HelveticaNeue/helveticaneuecyr-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue/helveticaneuecyr-black-webfont.woff") format("woff"), url("../fonts/HelveticaNeue/helveticaneuecyr-black-webfont.ttf") format("truetype");
+}

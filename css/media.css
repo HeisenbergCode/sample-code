@@ -1,0 +1,298 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.header-carusel .carousel-indicators {
+    bottom: -38px;
+    left: 245px;
+    width: 90%;
+    bottom: -38px;
+    left: 323px;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.menu {
+		display: none;
+	}
+	.section-1-h .logo {
+		margin-bottom: 30px;
+	}
+	.section-1-h .gamburger {
+		display: inline-block;
+		position: relative;
+    right: -40%;
+    margin-bottom: 30px;
+	}
+	.section-1-h .gamburger:hover+ .menu, .menu:hover {
+		display: block;
+		position: absolute;
+		z-index: 10;
+		top: 33px;
+    right: 19px;
+    background-color: rgba(68, 54, 183, 0.9);
+	}
+	.tape {
+		display: none;
+	}
+	.section-1-h {
+		text-align: center;
+		min-height: 985px;
+	}
+	.section-1-h h2 {
+		margin-top: 10px;
+	}
+	.section-1-h .request {
+    float: right;
+   }
+	.section-2 .problem-b-1-6 {
+		min-height: 161px;
+	}
+	.section-3 .img-2:before, .section-3 .img-3:before, .section-3 .img-4:before {
+		display: none;
+	}
+	.section-5 .course {
+		min-height: 242px;
+	}
+	.section-13 input {
+		display: block;
+		margin: 0 auto 10px;
+	}
+	.section-15 .propos {
+		min-height: 420px;
+	}
+	.section-15 p {
+		height: 150px;
+	}
+	.section-17 {
+		min-height: 735px;
+	}
+	.section-17 input {
+		display: block;
+		margin: 0 auto 10px;
+	}
+	.header-carusel .carousel-indicators {
+    bottom: -38px;
+    left: 245px;
+    width: 90%;
+  }
+  .carousel-indicators {
+  	display: none;
+  	top: 95px;
+  }
+  .line {
+  	display: none;
+  }
+  .section-9 .header-carusel .carousel-control {
+  	top: 117px;
+  }
+  .section-11 .header-carusel .carousel-control {
+  	top: 117px;
+  }
+  .section-9 .header-carusel .controls .left {
+  	left: -40px;
+  }
+  .section-9 .header-carusel .controls .right {
+  	right: -30px;
+  }
+  .section-11 .header-carusel .controls .left {
+  	left: -40px
+  }
+  .section-11 .header-carusel .controls .right {
+  	right: -30px
+  }
+  .head-carusel {
+  	max-height: 260px;
+  }
+  .section-17 {
+  	min-height: 767px;
+  }
+  .popup .content {
+  	min-width: 300px
+  }
+  .popup {
+  	padding: 70px 10px 10px 10px;
+
+  }
+  .popup input {
+  	padding: 14px 20px;
+  	width: 100%;
+  }
+  .popup input[type="submit"] {
+  	width: 100%;
+  }
+
+}
+@media only screen and (max-width : 810px) {
+	.section-8 {
+		display: none;
+	}
+	.section-9 {
+		display: none;
+	}
+	.section-10 {
+		display: none;
+	}
+	.section-11 {
+		display: none;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.section-1-h {
+		min-height: 1425px;
+	}
+	.section-1 .phone-b {
+		text-align: left;
+	}
+	.section-1-h .request {
+    float: right;
+   }
+  .section-1-h .logo {
+  	text-align: left;
+  	margin-bottom: 30px;
+  	margin-top: 10px;
+  }
+  .section-1-h .gamburger {
+  	text-align: right;
+  	margin-bottom: 30px;
+  	margin-top: 10px;
+  }
+  .section-1-h .gamburger:hover+ .menu, .menu:hover {
+		display: block;
+		position: absolute;
+		z-index: 10;
+		top: 44px;
+    right: 19px;
+    min-width: 125px;
+    background-color: rgba(68, 54, 183, 0.9);
+	}
+	.menu li {
+		display: block;
+		float: none;
+	}
+	.section-7 .email {
+		right: 10px;
+	}
+	.section-7 .phone {
+		left: 10px;
+	}
+	.section-15 p {
+		margin-bottom: 80px;
+	}
+	.popup input {
+  	padding: 14px 5px;
+  	width: 100%;
+  }
+
+  .popup {
+    margin: 0 auto;
+    padding: 10px 5px;
+  }
+  .popup .close {
+    z-index: 10;
+  }
+  .popup .order {
+    font-size: 20px;
+  }
+  .popup .under-order {
+    font-size: 12px;
+  }
+  .popup span {
+    font-si: 12px;
+  }
+  .popup input {
+    padding: 0;
+  }
+  .popup input[type='submit'] {
+    margin-top: 10px;
+  }
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.section-1-h {
+		min-height: 1614px;
+	}
+  .section-1 .xs-block-style {
+    width: 100%;
+    text-align: center;
+  }
+  .section-1 .phone-b {
+    text-align: center;
+  }
+  .section-1-h .request {
+    float: none;
+    margin: 20px auto 0;
+  }
+	.section-15 .propos p {
+		margin-bottom: 266px;
+	}
+	.section-7 .phone, .section-7 .email {
+		display: block;
+	}
+	.section-7 .phone {
+		left: -6px;
+	}
+	.section-7 .email {
+		right: -20px;
+	}
+	.section-17 {
+		min-height: 845px;
+	}
+
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

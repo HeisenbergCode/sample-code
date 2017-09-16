@@ -1,0 +1,1068 @@
+@import "bourbon/bourbon"
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+.invisible
+	display: none
+
+
+body
+	font-family: "HelveticaNeueRoman", sans-serif
+	font-weight: 500
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+iframe
+	border: 0
+
+/* Global Settings */
+
+$white: #ffffff
+$silver: #dad4d4
+$light-green: #9dcb3b
+$light-blue: #3766d3
+$gold: #e8bd58
+$dark-blue: #082c7e
+$blue-bg: #1b39b4
+
+.blue-txt
+	color: $light-blue
+
+.green-txt
+	color: $light-green
+
+%button
+	display: block
+	margin: 0 auto
+	max-width: 320px
+	border-radius: 27px
+	background-color: #9dcb3b
+	color: white
+	line-height: 32px
+	text-align: center
+	font-size: 20px
+	margin-top: 32px
+	transition: background-color .5s
+	&:hover
+		background-color: #b7b91c
+
+%section-3-line
+	content: ''
+	position: absolute
+	display: block
+	width: 128px
+	height: 1px
+	background-image: url("../img/dased-line.png")
+	left: -175px
+	top: 40px
+
+input
+	max-width: 219px
+	border: 0
+	border-radius: 19px / 18px 18px 19px 19px
+	background-color: #9b9b9b
+	padding-left: 40px
+	padding-right: 40px
+	color: #fff
+	font-size: 16px
+	margin-right: 10px
+input[type="submit"]
+	background-color: $light-green
+// input::placeholder
+// 	color: $white
+
+%content-wrap
+	margin-top: 40px
+	text-align: center
+
+%txt-desc-blue
+	text-align: center
+	color: $light-blue
+
+.section-caption
+	text-align: center
+	font-size: 24px
+	font-weight: 900
+	font-family: "HelveticaNeueRoman", sans-serif
+
+.section-link-blue, .section-link-trans
+	display: block
+	margin: 25px  auto 0
+	width: 46px
+	height: 47px
+
+.section-link-blue
+	background-image: url("../img/blue-arrow.png")
+
+.section-link-trans
+	background-image: url("../img/blue-arrow-trans.png")
+
+.no-paddings
+	padding: 0
+
+h1, h2
+	margin: 0
+h1
+	font-style: 24px
+	font-weight: 900
+h2
+	font-size: 22px
+	font-weight: 400
+
+.align-text-center
+	text-align: center
+
+.no-paddings
+	margin: 0
+	padding: 0
+
+a
+	color: silver
+	&:active
+		text-decoration: none
+	&:focus
+		color: silver
+		text-decoration: none
+	&:visited
+		color: silver
+		text-decoration: none
+	&:hover
+		color: white
+		text-decoration: none
+
+
+ul
+	list-style-type: none
+
+ul, li
+	margin: 0
+	padding: 0
+
+div, p
+	color: white
+
+.img
+	margin: 0 auto
+
+.desc
+	margin-top: 18px
+	font-size: 13px
+
+.responsive-img
+	width: 100%
+	height: auto
+
+.overlay
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	//background: rgba(0, 0, 0, 0.7)
+	transition: opacity 500ms
+	visibility: hidden
+	opacity: 0
+
+.overlay:target
+	visibility: visible
+	opacity: 1
+.popup
+	margin: 70px auto
+	//min-height: 198px
+	max-width: 500px
+	padding: 5px 80px 50px
+	background: #d1d7f0
+	//background: rgba(209, 215, 240, .80)
+	background-color: $white
+	border-radius: 5px
+	width: 45%
+	position: relative
+	transition: all 5s ease-in-out
+	z-index: 20
+	border-radius: 5px
+	//border: 1px dashed $light-green
+	text-align: left
+	color: #3e3e3e
+	min-width: 350px
+	p
+		color: #3e3e3e
+	.span
+		font-size: 14px
+		display: block
+		padding-bottom: 5px
+	.order
+		font-size: 32px
+		padding-top: 20px
+		text-align: center
+	.under-order
+		font-size: 14px
+	input
+		font-size: 14px
+		margin-bottom: 18px
+		padding: 14px 95px
+		max-width: 100%
+		display: block
+		border: 1px solid $light-green
+		background-color: $white
+		border-radius: 0
+		color: #b1b1b1
+		font-size: 16px
+		font-weight: 600
+		&:placeholder
+			color: #b1b1b1
+	input[type="submit"]
+		margin: 33px auto 0
+		background-color: $light-green
+		color: $white
+	input[type="submit"]:hover
+		background-color: #b7b91c
+		transition: .5s background-color
+
+
+.popup h2
+	margin-top: 0
+	color: #333
+
+.section-1-h .request a.close
+	color: $light-blue
+
+.popup .close
+	position: absolute
+	top: 20px
+	right: 30px
+	transition: all 200ms
+	font-size: 30px
+	font-weight: bold
+	text-decoration: none
+	color: #333
+
+.popup .close:hover
+	color: #06D85F
+
+.popup .content
+	max-height: 30%
+	overflow: auto
+	color: #3e3e3e
+	padding: 0
+	margin: 0
+
+.header-carusel .carousel-indicators li
+	width: 75px
+	height: 75px
+	padding: 30px
+	margin: 0 20px
+	border-radius: 50%
+
+/* SECTION 1 */
+.section .phone-b
+	padding: 0
+	text-align: center
+
+.section-1 .phone a
+	display: block
+	&:last-child
+		margin-top: -15px
+
+.section-1-h
+	min-height: 875px
+	height: 100%
+	background-image: url("../img/header-bg.png")
+	background-position: center center
+	background-size: cover
+	padding-top: 20px
+	.phone
+		a
+			color: white
+	.gamburger
+		width: 46px
+		height: 33px
+		background-image: url("../img/nav.png")
+		display: none
+	.only
+		font-size: (20/14)*1em
+
+	a
+		font-size: (16/14)*1em
+		//margin-right: 18px
+		margin-left: 18px
+		line-height: 44px
+	li
+		float: left
+	.request
+		width: 181px
+		border: 1px solid white
+		border-radius: 18px
+		background-image: url("../img/message.png")
+		background-repeat: no-repeat
+		background-position: 10px
+		a
+			display: block
+			padding-left: 30px
+			margin: 0
+			color: white
+			font-size: (16/14)*1em
+	.header-inf
+		margin-top: 96px
+	.left-txt
+		h1
+			font-size: (24/14)*1em
+			font-weight: 900
+			margin: 0
+		h2
+			font-size: (22/14)*1em
+			margin-top: 46px
+			font-weight: 500
+	.icons-b-1-4
+		text-align: center
+	.icons-b
+		margin-top: 37px
+		.img
+			height: 80px
+			width: 80px
+			background-image: url("../img/iconset.png")
+		.img-2
+			background-position: -160px
+		.img-3
+			background-position: 240px
+		.img-4
+			background-position: 81px
+		.desc
+			font-size: (13/14)*1em
+		.tape
+			position: absolute
+			height: 161px
+			width: 114px
+			background-image: url("../img/tape.png")
+			top: 67px
+			left: 160px
+	.owl-img
+		margin-top: 40px
+		position: relative
+	.try-free
+		@extend %button
+	.social
+		position: absolute
+		bottom: -79px
+		right: 0
+		font-size: (14/14)*1em
+		z-index: 15
+		a
+			margin: 0
+			padding: 0
+			color: $white
+	.youtube:before
+		display: block
+		position: absolute
+		content: ''
+		left: -28px
+		top: 10px
+		width: 25px
+		height: 25px
+		background-image: url("../img/youtub.png")
+		background-size: cover
+	.fb:before
+		display: block
+		position: absolute
+		left: -28px
+		top: 51px
+		content: ''
+		width: 25px
+		height: 25px
+		background-image: url("../img/fb.png")
+		background-size: cover
+
+
+/* SECTION 2 */
+
+.section-2
+	padding-top: 73px
+	.problem-b-1-6
+		@extend %content-wrap
+	.img
+		width: 85px
+		height: 83px
+		background-image: url("../img/problem-iconset.png")
+	.img-2
+		background-position: -156px center
+	.img-3
+		background-position: -325px center
+	.img-4
+		background-position: -480px center
+	.img-5
+		background-position: -638px center
+	.img-6
+		background-position: -791px center
+	.desc
+		@extend %txt-desc-blue
+
+/* SECTION 3 */
+
+.section-3
+	min-height: 511px
+	height: 100%
+	margin-top: 20px
+	padding-top: 30px
+	background-color: $blue-bg
+	position: relative
+	padding-bottom: 10px
+	.because
+		margin-top: 45px
+		text-align: center
+	.img
+		margin: 0 auto
+		height: 80px
+		width: 70px
+		background-image: url("../img/because-iconset.png")
+	.img-2, .img-3, .img-4
+		position: relative
+	.img-2
+		background-position: -229px center
+		&:before
+			@extend %section-3-line
+	.img-3
+		background-position: -463px center
+		&:before
+			@extend %section-3-line
+	.img-4
+		background-position: -707px center
+		&:before
+			@extend %section-3-line
+	.try-free
+		@extend %button
+
+/* SECTION 4 */
+
+.section-4
+	min-height: 690px
+	padding-top: 25px
+	padding-bottom: 25px
+	.diag-b
+		text-align: center
+		margin-top: 42px
+	.diagram
+		margin-top: 35px
+
+/* SECTION 5 */
+
+.section-5
+	min-height: 363px
+	background-color: $blue-bg
+	padding-top: 25px
+	padding-bottom: 25px
+	.course
+		text-align: center
+	.num
+		font-size: 88px
+		font-weight: 300
+		color: $gold
+	.num-desc
+		font-size: (13/14)*1em
+	.help-txt
+		font-size: (13/14)*1em
+		margin-top: 40px
+		text-align: left
+		padding-left: 35px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 26px
+			display: block
+			width: 26px
+			height: 13px
+			background-image: url("../img/rose.png")
+			background-repeat: no-repeat
+	.course-5
+		position: relative
+		cursor: pointer
+	.course-5-hint
+		position: absolute
+		padding: 10px
+		border-radius: 15px
+		visibility: hidden
+		display: block
+		color: $light-blue
+		background-color: #fff
+	.course-5:hover + .course-5-hint
+		visibility: visible
+
+
+
+/* SECTION 6 */
+
+.section-6
+	min-height: 590px
+	height: 100%
+	padding-top: 25px
+	padding-bottom: 25px
+	.more-course
+		@extend %content-wrap
+	.img
+		width: 83px
+		height: 82px
+		background-image: url("../img/more-course-iconset.png")
+	.desc
+		@extend %txt-desc-blue
+	.img-1
+		background-position: -45px 0
+	.img-2
+		background-position: -285px 0
+	.img-3
+		background-position: -526px 0
+	.img-4
+		background-position: -760px 0
+	.img-5
+		background-position: -29px 85px
+	.img-6
+		background-position: -285px 92px
+	.img-7
+		background-position: -526px 85px
+	.img-8
+		background-position: -760px 86px
+
+/* SECTION 7 */
+
+.section-7
+	min-height: 439px
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.65) 0%), url("../img/section-7-bg.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	position: relative
+	padding-top: 25px
+	padding-bottom: 25px
+	.section-caption-small
+		font-size: (22/14)*1em
+		font-weight: 500
+		margin-top: (48/21)*1em
+	.try-free
+		@extend %button
+	.contacts-b
+		text-align: center
+		font-size: (16/14)*1em
+		margin-top: (40/16)*1em
+		max-width: 710px
+		margin: 0 auto
+		margin-top: 43px
+	.phone, .email
+		display: inline-block
+	.phone
+		float: left
+		position: relative
+		left: 145px
+		&:before
+			content: ''
+			position: absolute
+			display: inline-block
+			width: 17px
+			height: 17px
+			background: url("../img/phone.png")
+			left: -18px
+			top: 6px
+	.email
+		float: right
+		position: relative
+		right: 145px
+		&:before
+			content: ''
+			position: absolute
+			display: inline-block
+			width: 17px
+			height: 17px
+			background: url("../img/message.png")
+			left: -18px
+			top: 6px
+
+/* SECTION 8 */
+
+.section-8
+	min-height: 365px
+	padding-top: 25px
+	padding-bottom: 25px
+	.sl-content
+		@extend %content-wrap
+	.img
+		width: 85px
+		height: 83px
+		background-image: url("../img/section-8-iconset.png")
+	.img-2
+		background-position: 2px -88px
+	.img-3
+		background-position: 2px -176px
+	.img-4
+		background-position: 2px -265px
+	.img-5
+		background-position: 2px -365px
+	/*.img-6
+		background-position: -791px center */
+	.desc
+		@extend %txt-desc-blue
+	.slick-prev::before, .slick-next::before
+		color: $light-green
+
+/* SECTION 9 */
+
+
+#otzyv
+	background: $blue-bg
+	padding-top: 25px
+	padding-bottom: 25px
+#otzyv h1
+	//font-family: helvetica-bold
+	font-size: 24px
+	text-align: center
+	color: #fff
+
+#otzyv h2
+	//font-family: helvetica-bold
+	font-size: 22px
+	color: #fff
+	position: relative
+	margin-top: 25px
+	margin-bottom: 20px
+
+// #otzyv h2:after
+// 	position: absolute
+// 	display: block
+// 	width: 50px
+// 	height: 50px
+// 	background: url(../img/vk.png) no-repeat
+// 	top: 3px
+// 	content: ""
+// 	left: 200px
+
+.text
+	color: #fff
+	font-size: 16px
+
+.first-text
+	color: #e8bd58
+
+.second-text
+	color: #9dcb3b
+
+.content
+	color: #fff
+	font-size: 13px
+	padding-left: 30px
+	margin-top: 30px
+	position: relative
+
+// .content:before
+/* 	position: absolute*/
+/* 	display: block*/
+/* 	content: ""*/
+/* 	width: 35px*/
+/* 	height: 20px*/
+/* 	background: url(../img/ms.png) no-repeat*/
+/* 	left: 0px*/
+
+.header-carusel .carousel-indicators .active:after
+	content: ""
+	position: absolute
+	display: block
+	width: 33px
+	height: 20px
+	background: url(../img/arr.png) no-repeat
+	background-color: $blue-bg
+	/*    background-size: 100%;*/
+	bottom: 89px
+	z-index: 1000
+	left: 25%
+
+.header-carusel .item
+	margin-top: 0px
+	padding-bottom: 160px
+
+
+.header-carusel .controls
+	position:relative
+	bottom: 90px
+	z-index: 13
+
+.header-carusel .carousel-control
+	/*    position: absolute;*/
+	width: 30px
+	height: 40px
+	z-index: 13
+	bottom: 0px
+	top: 268px
+
+.header-carusel .controls .right
+	background: url(../img/right.png) no-repeat !important
+	opacity: 1
+	/*	right: 10px;*/
+
+.header-carusel .controls .left
+	background: url(../img/left.png) no-repeat !important
+	opacity: 1
+
+.header-carusel .carousel-indicators
+	bottom: 30px
+	left: 392px
+	width: 90%
+
+.section-9
+	.header-carusel .carousel-indicators li
+		&.min-img-1
+			background: url('../img/min-panina.jpg')
+		&.min-img-2
+			background: url('../img/min-tisin.jpg')
+		&.min-img-3
+			background: url('../img/min-abragimovic.jpg')
+		&.min-img-4
+			background: url('../img/min-nikiforuk.jpg')
+		&.min-img-5
+			background: url('../img/min-safronova.jpg')
+		&.min-img-6
+			background: url('../img/min-brahin.jpg')
+	.order
+		min-height: 221px
+	.header-carusel .carousel-control
+		top: 298px
+	// background: #fff
+
+	// background: #fff
+
+	// /*    position: relative;*/
+	// color: #000
+
+
+.header-carusel .carousel-indicators .active
+	background: #fff
+	padding: 35px
+	margin: 10px 20px -5px
+	border: 2px solid #de9c78
+	position: relative
+
+.arow
+	margin: 0 auto
+	text-align: center
+	margin-bottom: 30px
+
+.line
+	position: relative
+	top: -150px
+	height: 1px
+	background: #a4b4d9
+
+
+/* SECTION 10 */
+
+.section-10
+	min-height: 385px
+	padding-top: 25px
+	padding-bottom: 25px
+	.videoandtxt
+		margin-top: 25px
+	.video
+		max-height: 220px
+	.name
+		color: $light-green
+		font-size: (22/14)*1em
+		font-weight: bold
+		position: relative
+		/* &:after*/
+		/* 	content: ''*/
+		/* 	position: absolute*/
+		/* 	display: inline-block*/
+		/* 	right: 7px*/
+		/* 	top: 7px*/
+		/* 	width: 29px*/
+		/* 	height: 17px*/
+		/* 	background: url("../img/vk.png")*/
+	.before, .after
+		margin-left: 10px
+		margin-right: 10px
+	.info
+		color: $light-blue
+	.before
+		color: $gold
+	.after
+		color: $light-green
+
+/* SECTION 11 */
+.section-11
+	.order
+		margin-bottom: 15px
+		margin-top: 25px
+		min-height: 315px
+
+	.img, .desc
+		display: inline-block
+
+	.img
+		border: 1px solid #2c3c55
+
+	.name
+		font-size: (21/14)*1em
+		margin-bottom: 35px
+	.header-carusel .carousel-control
+		top: 428px
+
+	.header-carusel .carousel-indicators li
+		width: 75px
+		height: 75px
+		//background: url('../img/min-zolotarev.png')
+		&.min-img-1
+			background: url('../img/min-storozev.png')
+		&.min-img-2
+			background: url('../img/min-volkov.png')
+		&.min-img-3
+			background: url('../img/min-lehkova.png')
+		&.min-img-4
+			background: url('../img/min-kozlova.png')
+		&.min-img-5
+			background: url('../img/min-zolotarev.png')
+		&.min-img-6
+			background: url('../img/min-sehovcova.png')
+
+
+/* SECTION 12 */
+
+.section-12
+	min-height: 438px
+	padding-top: 25px
+	padding-bottom: 25px
+	h2
+		text-align: center
+		margin-top: 30px
+	.secrets
+		@extend %content-wrap
+	.img
+		width: 198px
+		height: 52px
+		background: url("../img/stars.png")
+		margin:  auto
+	.desc
+		@extend %txt-desc-blue
+	.img-1
+		background-position: -45px -11px
+	.img-2
+		background-position: -50px -62px
+	.img-3
+		background-position: -50px -121px
+
+/* SECTION 13 */
+
+.section-13
+	min-height: 306px
+	padding-top: 25px
+	padding-bottom: 25px
+	background-color: $blue-bg
+	text-align: center
+	h2
+		text-align: center
+		margin-top: 48px
+		margin-bottom: 48px
+	input[type="submit"]:hover
+		background-color: #b7b91c
+		transition: .5s background-color
+
+
+
+/* SECTION 14 */
+
+.section-14
+	min-height: 550px
+	padding-top: 25px
+	padding-bottom: 25px
+	.lessons
+		@extend %content-wrap
+		height: 220px
+	.img
+		width: 90px
+		height: 75px
+		background-image: url("../img/lessons-iconset.png")
+		margin: 0 auto
+	.img-1
+		background-position: 21px 0
+	.img-2
+		background-position: -307px 0
+	.img-3
+		background-position: -633px 0
+	.img-4
+		background-position: 20px -130px
+	.img-5
+		background-position: -300px -130px
+	.img-6
+		background-position: -625px -130px
+	.desc
+		@extend %txt-desc-blue
+
+/* SECTION 15 */
+
+.section-15
+	min-height: 696px
+	padding-top: 25px
+	padding-bottom: 25px
+	background-color: $blue-bg
+	.propos
+		min-height: 619px
+		background-color: #FFF
+		text-align: center
+		padding-top: 10px
+		padding-bottom: 10px
+		padding-left: 10px
+		padding-right: 10px
+		border-radius: 5px
+		border: 1px solid $light-green
+		margin-top: 45px
+	.under-caption
+		color: $gold
+		font-size: (16/14)*1em
+		font-weight: bold
+	p
+		@extend %txt-desc-blue
+		font-size: (16/14)*1em
+		margin-bottom: 40px
+		line-height: (30/16)*1em
+		height: 330px
+	.price
+		color: $dark-blue
+	.try-free
+		@extend %button
+		padding-left: 30px
+		padding-right: 30px
+		display: inline-block
+		max-width: 180px
+		text-transform: uppercase
+	.bonus
+		color: $dark-blue
+
+/* SECTION 16 */
+
+.section-16
+	min-height: 602px
+	padding-top: 25px
+	padding-bottom: 25px
+	.section-caption
+		font-weight: bold
+	.mapandtxt
+		text-align: center
+		margin-top: 42px
+	.town-name
+		font-size: (24/14)*1em
+		color: $light-green
+	.address
+		color: $gold
+		font-weight: bold
+	.gmap
+		max-height: 290px
+		margin-top: 25px
+		border: 1px solid $light-green
+	iframe
+		width: 100%
+
+/* SECTION 17 */
+
+.section-17
+	min-height: 550px
+	padding-top: 25px
+	padding-bottom: 25px
+	background: url("../img/footer-bg.jpg")
+	text-align: center
+	height: 2px
+	.timer
+		margin-top: 15px
+		margin-bottom: 15px
+	h2
+		margin-top: 42px
+		margin-bottom: 42px
+	h2:last-child
+		margin-bottom: 0
+	.timer-b
+		margin: 0 auto
+		height: 166px
+		text-align: center
+		padding-left: 30px
+		padding-right: 30px
+	.end-in
+		text-align: center
+		font-size: (21/14)*1em
+	.day, .hour, .minute, .second
+		display: inline-block
+		margin-right: 48px
+		font-weight: 700
+	.second
+		color: #ff8400
+		margin-right: 0
+	.digits
+		font-size: (58/14)*1em
+	.txt
+		font-size: (21/14)*1em
+		text-transform: uppercase
+	.copy
+		font-size: (18/14)*1em
+		color: #cdcdcd
+		margin-top: 40px
+		font-weight: normal
+	input[type="submit"]:hover
+		background-color: #b7b91c
+		transition: .5s
+	.copy
+		cursor: pointer
+		// position: relative
+	.pol-conf
+		display: none
+		z-index: 15
+		position: fixed
+		overflow: scroll
+		// overflow-y: scroll
+		// overflow-x: hidden
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		// top: 50%
+		// left: 50%
+		// transform: translate(-50%, -50%)
+		// margin: auto auto
+		width: 85%
+		margin: 0 auto
+		height: 100%
+		max-height: 1062px
+		// top: -432px
+		padding: 15px
+		border: 1px solid white
+		background-color: #1b39b4
+		.close
+			display: inline-block
